@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marque: MyString
+  annee: 1
+  Pilote_id: 
+
+two:
+  marque: MyString
+  annee: 1
+  Pilote_id: 

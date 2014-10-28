@@ -1,0 +1,27 @@
+<h1>Listing pilotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pilotes.each do |pilote| %>
+      <tr>
+        <td><%= pilote.name %></td>
+        <td><%= pilote.age %></td>
+        <td><%= link_to 'Show', pilote %></td>
+        <td><%= link_to 'Edit', edit_pilote_path(pilote) %></td>
+        <td><%= link_to 'Destroy', pilote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pilote', new_pilote_path %>
